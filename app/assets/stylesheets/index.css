@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: fit-content;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+li {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+li span {
+  display: flex;
+  gap: 20px;
+}
+
+button,
+input[type=submit],
+input[type=text] {
+  padding: 5px 10px;
+}

@@ -1,0 +1,14 @@
+<h1>Todo or not Todo</h1>
+
+<h2 id="todos_count"><%= pluralize(@todos.length, "todo") %> left</h2>
+
+<%= form_with model: @todo, url: todos_path do |f| %>
+  <%= f.text_field :title, placeholder: "add new todo", value: nil, required: true %>
+  <%= f.submit "Add", html: { onclick: "clearInput" } %>
+<% end %>
+
+<ul id="todos">
+  <% @todos.each do |todo| %>
+    <%= render "todo", todo: todo %>
+  <% end %>
+</ul>

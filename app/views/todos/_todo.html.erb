@@ -1,0 +1,10 @@
+<li id="todo_<%= todo.id %>">
+  <span>
+    <%# <input type="checkbox"> %>
+    <%= todo.title %>
+  </span>
+  <span>
+    <%= edit_button(todo.id) %>
+    <%= delete_button(todo.id) %>
+  </span>
+</li>

@@ -1,0 +1,5 @@
+<%= turbo_stream.remove "todo_#{@todo.id}" %>
+
+<%= turbo_stream.replace "todos_count" do %>
+  <h2 id="todos_count"><%= pluralize(@count, "todo") %> left</h2>
+<% end %>

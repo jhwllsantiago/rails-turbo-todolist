@@ -1,0 +1,7 @@
+<%= turbo_stream.prepend "todos" do %>
+  <%= render "todo", todo: @todo %>
+<% end %>
+
+<%= turbo_stream.replace "todos_count" do %>
+  <h2 id="todos_count"><%= pluralize(@count, "todo") %> left</h2>
+<% end %>
