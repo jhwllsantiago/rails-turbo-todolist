@@ -29,3 +29,5 @@ group :development do
   # gem "spring"
 end
 
+gem "importmap-rails"
+gem "turbo-rails"
